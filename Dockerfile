@@ -61,10 +61,10 @@ RUN cd $HOME/work;\
                 dash-renderer \
                 flask; \
     python -m sos_notebook.install;\
-    git clone -b master --single-branch https://github.com/FINKI-Research-methodology-in-ICT/notebooks19.git; \
-    cd notebooks19;\
-    chmod -R 777 $HOME/work/notebooks19;
+    git clone -b main https://github.com/zelenkastiot/sos-binder-octave-py.git; \
+    cd sos-binder-octave-py;\
+    chmod -R 777 $HOME/work/sos-binder-octave-py;
 
-WORKDIR $HOME/work/notebooks19
+WORKDIR $HOME/work/sos-binder-octave-py
 
 USER $NB_UID
